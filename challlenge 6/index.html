@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Inventory Range Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📦 Inventory Analytics</h1>
+
+
+        <!-- PRICE RANGE -->
+
+        <section class="search-box">
+
+            <h2>Inventory Price Range</h2>
+
+            <div class="inputs">
+
+                <div>
+                    <label>
+                        Minimum Price
+                    </label>
+
+                    <input
+                        type="number"
+                        id="minPrice"
+                        placeholder="₹5,000"
+                    >
+                </div>
+
+
+                <div>
+                    <label>
+                        Maximum Price
+                    </label>
+
+                    <input
+                        type="number"
+                        id="maxPrice"
+                        placeholder="₹20,000"
+                    >
+                </div>
+
+
+                <button id="searchButton">
+                    Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRICE SLIDER -->
+
+        <section class="slider-box">
+
+            <h2>Price Range</h2>
+
+
+            <div class="slider-values">
+
+                <span id="minSliderValue">
+                    ₹0
+                </span>
+
+                <span id="maxSliderValue">
+                    ₹0
+                </span>
+
+            </div>
+
+
+            <input
+                type="range"
+                id="minSlider"
+                min="0"
+                max="150000"
+                value="0"
+                step="100"
+            >
+
+
+            <input
+                type="range"
+                id="maxSlider"
+                min="0"
+                max="150000"
+                value="150000"
+                step="100"
+            >
+
+        </section>
+
+
+        <!-- SUMMARY -->
+
+        <section class="summary">
+
+            <div class="summary-card">
+
+                <h3>
+                    Products
+                </h3>
+
+                <p id="productCount">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <h3>
+                    Inventory Value
+                </h3>
+
+                <p id="inventoryValue">
+                    ₹0
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- MATCHING PRODUCTS -->
+
+        <section class="products-section">
+
+            <h2>
+                Matching Products
+            </h2>
+
+
+            <div
+                id="productList"
+                class="product-grid">
+
+                <div class="empty-message">
+
+                    Enter a price range.
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="data.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
