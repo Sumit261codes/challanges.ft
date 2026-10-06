@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Personalized Recommendations</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🛍️ Product Explorer</h1>
+
+
+        <!-- CURRENT USER -->
+
+        <section class="current-user">
+
+            <h2>Current User</h2>
+
+            <p>
+                Select a product you have viewed:
+            </p>
+
+
+            <div
+                id="currentUserProducts"
+                class="current-products">
+            </div>
+
+        </section>
+
+
+        <!-- RECOMMENDATIONS -->
+
+        <section class="recommendation-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Recommended For You
+                    </h2>
+
+                    <p id="recommendationReason">
+                        View a product to get recommendations.
+                    </p>
+
+                </div>
+
+
+                <button id="refreshButton">
+                    🔄 Refresh Recommendations
+                </button>
+
+            </div>
+
+
+            <div
+                id="recommendations"
+                class="recommendation-grid">
+
+                <div class="empty-message">
+
+                    No recommendations yet.
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VIEW HISTORY -->
+
+        <section class="viewed-section">
+
+            <h2>
+                Your Viewed Products
+            </h2>
+
+
+            <div
+                id="viewedProducts"
+                class="viewed-list">
+
+                <div class="empty-message">
+                    You have not viewed any products yet.
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="data.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
