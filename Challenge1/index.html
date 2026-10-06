@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Price Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>💰 Smart Price Finder</h1>
+
+
+        <div class="box">
+
+            <h2>Find products around:</h2>
+
+            <div class="input-row">
+
+                <input
+                    type="number"
+                    id="targetPrice"
+                    placeholder="Enter price"
+                >
+
+                <button id="searchButton">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="box">
+
+            <h2>Find Products in Price Range</h2>
+
+            <div class="input-row">
+
+                <input
+                    type="number"
+                    id="minPrice"
+                    placeholder="Minimum Price"
+                >
+
+                <input
+                    type="number"
+                    id="maxPrice"
+                    placeholder="Maximum Price"
+                >
+
+                <button id="rangeButton">
+                    Find Products
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <h2 class="result-heading">
+            Closest Products
+        </h2>
+
+
+        <div id="results" class="products">
+
+            <div class="message">
+                Enter a price and click Search.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
