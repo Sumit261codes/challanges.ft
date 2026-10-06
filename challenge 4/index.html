@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Undo Redo Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🛒 Shopping Cart</h1>
+
+
+        <!-- PRODUCTS -->
+
+        <section>
+
+            <h2>Products</h2>
+
+            <div
+                id="productList"
+                class="product-grid">
+            </div>
+
+        </section>
+
+
+        <!-- CART -->
+
+        <section class="cart-section">
+
+            <div class="cart-header">
+
+                <div>
+
+                    <h2>Your Cart</h2>
+
+                    <p id="itemCount">
+                        Items: 0
+                    </p>
+
+                </div>
+
+
+                <div class="history-buttons">
+
+                    <button
+                        id="undoButton"
+                        disabled>
+                        ↩ Undo
+                    </button>
+
+                    <button
+                        id="redoButton"
+                        disabled>
+                        ↪ Redo
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- OPERATION HISTORY -->
+
+            <div class="history">
+
+                <h3>Operation History</h3>
+
+                <div id="operationHistory">
+                    No operations yet.
+                </div>
+
+            </div>
+
+
+            <!-- CART ITEMS -->
+
+            <div id="cartItems">
+
+                <div class="empty-cart">
+                    Your cart is empty.
+                </div>
+
+            </div>
+
+
+            <!-- TOTAL -->
+
+            <div class="cart-total">
+
+                <strong>
+                    Total:
+                </strong>
+
+                <span id="cartTotal">
+                    ₹0
+                </span>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
