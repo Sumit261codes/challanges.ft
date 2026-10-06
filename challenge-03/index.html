@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recently Viewed Products</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🛍️ Product Explorer</h1>
+
+
+        <!-- ALL PRODUCTS -->
+
+        <section>
+
+            <h2>Products</h2>
+
+            <div id="productList" class="product-grid"></div>
+
+        </section>
+
+
+        <!-- RECENTLY VIEWED -->
+
+        <section class="recent-section">
+
+            <div class="recent-header">
+
+                <h2>Recently Viewed</h2>
+
+                <button id="removeHistoryButton">
+                    Remove History
+                </button>
+
+            </div>
+
+
+            <div
+                id="recentProducts"
+                class="recent-products"
+            >
+
+                <div class="empty-message">
+                    No recently viewed products.
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+    <!-- PRODUCT MODAL -->
+
+    <div
+        id="productModal"
+        class="modal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                id="closeModal"
+                class="close-button"
+            >
+                ×
+            </button>
+
+
+            <h2 id="modalName"></h2>
+
+            <p id="modalBrand"></p>
+
+            <p id="modalPrice"></p>
+
+            <p id="modalRating"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
